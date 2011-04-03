@@ -71,15 +71,10 @@ class rwdImage {
 		$_SESSION['rwd-viewport'] = $view = $_COOKIE['rwd-viewport'];
 	}
 	
-	if($view == 'large' || !$view) {
+	if($view == 'small' || !$view) {
 		$image = $rwd->resize($image, $path, .25, $type);
 	}
-	
-	header("Cache-Control: private, max-age=10800, pre-check=10800");
-	header("Pragma: private");
-	header("Expires: " . date(DATE_RFC822, strtotime("1 day")));
-	// To prevent hiccups should the user attempt to download the image:
-	header('Content-Disposition: Attachment;filename=image.png');
+
 	header("Content-Type: image/$type");
 	print $image;
 	imagedestroy($image);
