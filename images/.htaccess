@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteRule ^(.+)$ img.php?path=$1 [L,QSA]

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+		<title>Responsive Image Test</title>
+		
+		<script type="text/javascript">
+		(function() {
+			var date = new Date(),
+				size = screen.availWidth > 480;
+				
+		    date.setTime(date.getTime() + (1 * 24 * 60 * 60 * 1000));
+			document.cookie = 'rwd-viewport = ' + ( size ? "large" : "small" ) + '; expires = ' + date.toGMTString() + '; path = /';
+		})();
+		</script>
+		
+	</head>
+	<body>
+		<img src="images/boston.jpg" />
+	</body>
+</html>

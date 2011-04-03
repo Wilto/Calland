@@ -1,0 +1,7 @@
+Spent today messin’ around with responsive images, and thought I might try a back-end approach—it actually started to look kind of promising, so I may as well throw my scratch paper up here, yeah?
+
+So, the basic idea is that the .htaccess file intercepts the request for the image file and forwards the path along to img.php, which potentially generates and caches a smaller version of the image depending on the screen size set in the ‘rwd-viewport’ cookie via JS.
+
+Obviously this is still rough. I'm just resizing to 25% on smaller screen sizes because it was the first thing that came to mind, but that should probably be a little more... User-settable.
+
+Should it generate and store the images on the server for access later? Let us think on this.
