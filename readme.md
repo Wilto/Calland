@@ -9,10 +9,10 @@ Said cookie is set to the greater of the device’s height or width, allowing fo
 
 ## What I Don't Like
 
-# There's nothing going on (yet) in the way of caching the generated images.
-# The lack of control. One doesn’t always need potentially screen-width images, so I want to introduce some way of controlling this on a image-specific level.
-# Everything hinges on cookies and JS being enabled. Again, I’m just messing around with this, and haven’t come up with anything in the way of a plan-B—I wouldn’t use this for any production sites yet.
+* There's nothing going on (yet) in the way of caching the generated images.
+* The lack of control. One doesn’t always need potentially screen-width images, so I want to introduce some way of controlling this on a image-specific level.
+* Everything hinges on cookies and JS being enabled. Again, I’m just messing around with this, and haven’t come up with anything in the way of a plan-B—I wouldn’t use this for any production sites yet.
 
 ## What I Do Like
 
-# The name is kind of clever, right? Eh, eh?
+* The name is kind of clever, right? Eh, eh?
