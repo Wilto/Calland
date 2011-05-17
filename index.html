@@ -9,11 +9,10 @@
 		<script type="text/javascript">
 		(function() {
 			var date = new Date(),
-				max = (screen.availWidth > screen.availHeight ) ? screen.availHeight : screen.availWidth;
+				max = (screen.availWidth > screen.availHeight ) ? screen.availWidth : screen.availHeight;
 				
 		    date.setTime(date.getTime() + (1 * 24 * 60 * 60 * 1000));
 			document.cookie = 'rwd-viewport = ' + max + '; expires = ' + date.toGMTString() + '; path = /';
-			
 		})();
 		</script>
 		

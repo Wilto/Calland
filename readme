@@ -2,10 +2,6 @@ Spent today messin’ around with responsive images, and thought I might try a b
 
 So, the basic idea is that the .htaccess file intercepts the request for the image file and forwards the path along to img.php, which potentially generates and caches a smaller version of the image depending on the screen size set in the ‘rwd-viewport’ cookie via JS.
 
-Obviously this is still rough. Couple of notes:
-
-I'm just resizing to 25% on smaller screen sizes because it was the first thing that came to mind, but that should probably be a little more... User-settable. Also, images should never be resized to larger than the device's screen width—there's no need to only restrict us to "small" and "large" images with this approach, right?
-
-Should it generate and store the images on the server for access later? Let us think on this.
+Said cookie is set to the greater of the device's height or width, to allow for full-bleed images regardless of device orientation.
 
 Here's the big thing: I'm not sure how I feel about delivering the mobile images to users with cookies disabled. Granted it's a better approach than potentially throwing monster images at users on a Nokia 6230, but... Still, there has to be some way of providing a fall-back method for passing the viewport information along to the backend.
