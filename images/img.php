@@ -22,7 +22,7 @@
 					break; 
 				case "jpeg": 
 				case "jpg":
-					$type = "jpg"; 
+					$type = "jpeg"; 
 					break; 
 			}
 			return $type;
